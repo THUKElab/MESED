@@ -1,0 +1,5 @@
+torch==2.0.1
+transformers==4.28.0
+torchvision
+einops
+scipy
