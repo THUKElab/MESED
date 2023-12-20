@@ -4,7 +4,7 @@
 
 >The Entity Set Expansion (ESE) task aims to expand a handful of seed entities with new entities belonging to the same semantic class. Conventional ESE methods are based on mono-modality (i.e., literal modality), which struggle to deal with complex entities in the real world such as (1) Negative entities with fine-grained semantic differences. (2) Synonymous entities. (3) Polysemous entities. (4) Long-tailed entities. These challenges prompt us to propose novel Multi-modal Entity Set Expansion (MESE), where models integrate information from multiple modalities to represent entities. Intuitively, the benefits of multi-modal information for ESE are threefold: (1) Different modalities can provide complementary information. (2) Multi-modal information provides a unified signal via common visual properties for the same semantic class or entity. (3) Multi-modal information offers robust alignment signals for synonymous entities. To assess model performance in MESE, we constructed the MESED dataset which is the first multi-modal dataset for ESE with large-scale and elaborate manual calibration. A powerful multi-modal model MultiExpan is proposed which is pre-trained on four multimodal pre-training tasks. The extensive experiments and analyses on MESED demonstrate the high quality of the dataset and the effectiveness of our MultiExpan, as well as pointing the direction for future research.
 
-<img src="image/intro.jpg" alt="intro" style="zoom:40%;" />
+<img src="image/intro.jpg" alt="intro" style="zoom:30%;" />
 
 You can refer to [the arXiv version with Appendix](https://arxiv.org/abs/2307.14878).
 
@@ -42,24 +42,24 @@ to get datasets used in our experiments.
 ```
 MESED
 ├── dataset
-│   ├── image
+│   ├── image
 │   └── mention
 ├── MultiExpan
 │   ├── data
-│   │		├── gt
-│   │		├── query
-│   │		├── query_seed=5
-│   │		├── eid2cls.pkl
-│   │		├── entity2id.txt
-│   │		└── sentences.json
+│   │   ├── gt
+│   │   ├── query
+│   │   ├── query_seed=5
+│   │   ├── eid2cls.pkl
+│   │   ├── entity2id.txt
+│   │   └── sentences.json
 │   └── src
-│   		├── Expan.py
-│   		├── HCL.py
-│   		├── main.py
-│   		├── make_cls2eids.py
-│   		├── make_entity2sents.py
-│   		├── Trans.py
-│   		└── utils.py
+│       ├── Expan.py
+│       ├── HCL.py
+│       ├── main.py
+│       ├── make_cls2eids.py
+│       ├── make_entity2sents.py
+│       ├── Trans.py
+│       └── utils.py
 ├── README.md
 └── requirement.txt
 ```
@@ -68,7 +68,7 @@ MESED
 
 >MESED is the first multi-modal ESE dataset with meticulous manual calibration. It consists of three layers, with 14,489 entities collected from Wikipedia, and 434,675 image-sentence pairs. The first and second layers encompass 8 and 26 coarse-grained semantic classes, respectively, and the last layer contains 70 fine-grained semantic classes. The 70 fine-grained semantic classes in MESED contain an average of 82 entities with a minimum of 23 and a maximum of 362. Each fine-grained class contains 5 queries with three seed entities and 5 queries with five seed entities.
 
-<img src="image/scheme.jpg" alt="intro" style="zoom:50%;" />
+<img src="image/scheme.jpg" alt="intro" style="zoom:30%;" />
 
 ## 🚀 Train and Evaluate
 
