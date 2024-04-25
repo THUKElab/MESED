@@ -24,15 +24,12 @@ pip install -r requirement.txt
 
 ## 📚 Dataset(MESED)
 
-- Run
+- Download file from [this link](https://cloud.tsinghua.edu.cn/d/6d2a4a4ea7a14bf7b369/) and run:
 
 
 ```
-wget -O dataset0 https://cloud.tsinghua.edu.cn/f/5f1c716620bf4c4ca7cb/?dl=1
-wget -O dataset1 https://cloud.tsinghua.edu.cn/f/035ee15f2dea4e4285ed/?dl=1
 cat dataset* > dataset.tar.gz
-
-wget -O data.tar.gz https://cloud.tsinghua.edu.cn/f/4538ef423b0d43df8b88/?dl=1
+tar zxvf dataset.tar.gz
 ```
 
 to get datasets used in our experiments.
