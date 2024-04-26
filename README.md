@@ -24,7 +24,7 @@ pip install -r requirement.txt
 
 ## 📚 Dataset(MESED)
 
-- Download file from [this link](https://cloud.tsinghua.edu.cn/d/6d2a4a4ea7a14bf7b369/) and run:
+- Download file from [this link](https://cloud.tsinghua.edu.cn/d/a6562215250c43bfb760/) and run:
 
 
 ```
